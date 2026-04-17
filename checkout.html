@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+<!-- HEADER -->
+<div class="bg-teal-700 py-6 px-10">
+  <h1 class="text-white text-2xl font-semibold">Checkout</h1>
+</div>
+
+<!-- MAIN -->
+<div class="max-w-4xl mx-auto py-10 px-4 space-y-8">
+
+  <!-- ===== ADDRESS SECTION ===== -->
+  <div class="border rounded bg-white">
+
+    <div class="border-b p-6">
+      <h2 class="text-2xl font-semibold">1. Enter Address</h2>
+    </div>
+
+    <div class="p-6 space-y-6">
+
+      <!-- Address -->
+      <div>
+        <label class="font-semibold">Address & Road</label>
+        <input type="text"
+          placeholder="Enter your address"
+          class="w-full mt-2 border px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-teal-500">
+      </div>
+
+      <!-- City + State -->
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <label class="font-semibold">City</label>
+          <input type="text"
+            placeholder="Enter your city"
+            class="w-full mt-2 border px-4 py-2 rounded focus:ring-2 focus:ring-teal-500">
+        </div>
+
+        <div>
+          <label class="font-semibold">State</label>
+          <input type="text"
+            placeholder="Enter your state"
+            class="w-full mt-2 border px-4 py-2 rounded focus:ring-2 focus:ring-teal-500">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ===== PAYMENT SECTION ===== -->
+  <div class="border rounded bg-white">
+
+    <div class="border-b p-6">
+      <h2 class="text-2xl font-semibold">2. Payment Method</h2>
+    </div>
+
+    <div class="p-6 space-y-6">
+
+      <!-- Credit Card Option -->
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <input type="radio" checked class="accent-teal-600 w-5 h-5">
+          <span class="text-lg font-medium">Credit Card</span>
+        </div>
+
+        <!-- Card Icons -->
+        <div class="flex gap-2">
+          <img src="images/mastercard.png" class="h-8">
+          <img src="images/visa.png" class="h-8">
+        </div>
+      </div>
+
+      <p class="text-gray-600">
+        Save money transfer using bank account Visa, Mastero
+      </p>
+
+      <!-- Card Number -->
+      <div>
+        <label class="font-semibold">CREDIT CARD NUMBER</label>
+        <input type="text"
+          placeholder="Enter your card number"
+          class="w-full mt-2 border px-4 py-2 rounded focus:ring-2 focus:ring-teal-500">
+      </div>
+
+      <!-- CVV + Expiry -->
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <div>
+          <label class="font-semibold">CVV CODE</label>
+          <input type="password"
+            placeholder="***"
+            class="w-full mt-2 border px-4 py-2 rounded focus:ring-2 focus:ring-teal-500">
+        </div>
+
+        <div>
+          <label class="font-semibold">EXPIRY DATE</label>
+          <input type="text"
+            placeholder="MM/YY"
+            class="w-full mt-2 border px-4 py-2 rounded focus:ring-2 focus:ring-teal-500">
+        </div>
+
+      </div>
+
+      <!-- Name -->
+      <div>
+        <label class="font-semibold">NAME ON CARD</label>
+        <input type="text"
+          placeholder="Enter your name on the card"
+          class="w-full mt-2 border px-4 py-2 rounded focus:ring-2 focus:ring-teal-500">
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ===== TERMS + BUTTON ===== -->
+  <div class="text-center space-y-6">
+
+    <p class="text-gray-600 max-w-2xl mx-auto">
+      Continuing to place the order indicates that you have read and accepted our Terms & Conditions.
+      If you do not accept these terms please do not proceed
+    </p>
+
+    <button class="bg-teal-600 text-white px-8 py-3 rounded hover:bg-teal-700 transition">
+      CONFIRM ORDER
+    </button>
+
+  </div>
+
+</div>
+
+</body>
+</html>

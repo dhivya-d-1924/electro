@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Iphone 16 Pro</title>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .top-bar {
+      background: #1c8b8f;
+      color: white;
+      text-align: center;
+      padding: 8px;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: url('/Assets/images/header\ image.png') no-repeat center/cover;
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      padding: 40px;
+      color: black;
+    }
+
+    .hero-content {
+      max-width: 500px;
+    }
+
+    .search-box {
+      border-radius: 20px;
+      padding: 5px 15px;
+      border: 1px solid #ccc;
+    }
+
+    .icon {
+      font-size: 20px;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+
+<!-- Top Bar -->
+<div class="bg-teal-600 text-white text-center py-2 text-sm">
+  SUMMER SALE IS BACK! GET UPTO 40% DISCOUNT ON HEADPHONES!
+</div>
+
+<!-- NAVBAR -->
+<nav class="bg-white shadow-md px-4 py-3">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+    <!-- Logo -->
+    <a href="/Assets/sr.html" class="flex items-center">
+      <img src="/Assets/images/logo.png" class="h-10 w-auto" alt="Logo">
+    </a>
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex gap-10 font-bold">
+      <a href="/Assets/catagories.html">CATEGORIES</a>
+    <a href="/Assets/aboutus.html">ABOUT US</a>
+      </div>
+      
+      <!-- Cart Image -->
+       <div class="flex items-center gap-4">
+    <input type="text" placeholder="Search"
+      class="border rounded-full px-4 py-1 outline-none">
+
+      <a href="cart.html">
+        <img src="/Assets/images/cart home.png" 
+             alt="Cart" 
+             class="h-6 w-6 cursor-pointer hover:scale-110 transition">
+      </a>
+
+      <!-- User Image -->
+      <a href="profile.html">
+        <img src="/Assets/images/user home.png" 
+             alt="User" 
+             class="h-6 w-6 cursor-pointer hover:scale-110 transition">
+      </a>
+
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="menuBtn" class="md:hidden text-2xl">
+      ☰
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden mt-4 flex flex-col items-center gap-4">
+
+    <a href="cart.html">
+      <img src="/Assets/images/cart home.png" class="h-6 w-6">
+    </a>
+
+    <a href="profile.html">
+      <img src="/Assets/images/user home.png" class="h-6 w-6">
+    </a>
+
+  </div>
+</nav>
+
+<body class="bg-gray-100">
+
+<!-- HEADER -->
+<div class="bg-teal-700 py-6 px-10">
+  <h1 class="text-white text-2xl font-semibold">Iphone 16 Pro</h1>
+</div>
+
+<!-- MAIN -->
+<div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-2 gap-10">
+
+  <!-- ===== LEFT: IMAGE GALLERY ===== -->
+  <div class="flex gap-4">
+
+    <!-- Main Image -->
+    <div class="flex-1">
+      <img id="mainImg"
+        src="/Assets/images/speaker pro 1.png"
+        class="w-full h-[420px] object-cover rounded">
+    </div>
+
+    <!-- Thumbnails -->
+    <div class="flex flex-col gap-3">
+      <img src="/Assets/images/speaker pro 2.png"
+        onclick="changeImg(this)"
+        class="w-24 h-24 object-cover rounded cursor-pointer border hover:scale-105 transition">
+
+      <img src="/Assets/images/speaker pro 3.png"
+        onclick="changeImg(this)"
+        class="w-24 h-24 object-cover rounded cursor-pointer border hover:scale-105 transition">
+
+      <img src="/Assets/images/speaker pro 4.png"
+        onclick="changeImg(this)"
+        class="w-24 h-24 object-cover rounded cursor-pointer border hover:scale-105 transition">
+    </div>
+
+  </div>
+
+
+  <!-- ===== RIGHT: PRODUCT DETAILS ===== -->
+  <div>
+
+    <p class="text-gray-500 mb-1">Apple</p>
+
+    <h2 class="text-3xl font-bold mb-4">Iphone 16 Pro</h2>
+
+    <p class="text-2xl font-semibold mb-4">₹ 41,250</p>
+
+    <p class="text-gray-600 text-sm mb-2">
+      TAX INCLUDED | SHIPPING CALCULATED AT CHECKOUT
+    </p>
+
+    <p class="text-sm text-gray-500 mb-6">
+      Reference ID:124578482
+    </p>
+
+    <!-- Quantity + Cart -->
+    <div class="flex items-center gap-4 mb-6">
+
+      <button onclick="decreaseQty()" class="text-xl">-</button>
+
+      <span id="qty" class="bg-teal-600 text-white px-4 py-2 rounded">1</span>
+
+      <button onclick="increaseQty()" class="text-xl">+</button>
+
+      <button class="ml-4 bg-teal-600 text-white px-6 py-2 rounded hover:bg-teal-700 transition">
+        <a href="cart.html">
+        Add to Cart
+      </button>
+</a>
+    </div>
+
+    <!-- Shipping Info -->
+    <div class="space-y-3 text-gray-700">
+
+      <p>🚚 Free shipping on all orders over 450 rupees</p>
+      <p>⏱ Delivery in 3-4 working days shipping & return</p>
+      <p class="text-green-600 underline cursor-pointer">
+        Free delivery and return policies
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ===== FEATURES ===== -->
+<div class="max-w-5xl mx-auto px-4 py-10">
+  <ul class="list-disc pl-6 space-y-3 text-gray-800">
+
+    <li>Enjoy up to 36 hours of music</li>
+    <li>A quick 10-minute charge gives you an additional 2 hours of playback</li>
+    <li>13mm dynamic driver with BassUp technology</li>
+    <li>Lightweight semi-in-ear design for comfort</li>
+    <li>AI-powered noise reduction for clear voice</li>
+    <li>Dual-mic ENC for better call clarity</li>
+    <li>22 EQ settings via app</li>
+    <li>Game Mode for enhanced audio experience</li>
+    <li>Touch control for playback and calls</li>
+    <li>Customizable controls via app</li>
+
+  </ul>
+</div>
+
+
+
+
+
+<!-- ===== MORE TO BUY ===== -->
+<div class="max-w-7xl mx-auto px-4 pb-16">
+
+  <h3 class="text-xl font-semibold mb-6">MORE TO BUY</h3>
+
+  <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+
+    <!-- CARD -->
+    <div class="bg-white border rounded p-3 hover:shadow-lg transition">
+      <img src="/Assets/images/headphones 5.png" class="w-full h-40 object-cover rounded">
+      <h4 class="mt-2 font-semibold">Anker Soundcore H30i Headphones</h4>
+      <p class="text-sm text-gray-500">Anker</p>
+      <div class="flex gap-3 mt-2">
+        <span class="line-through text-gray-400">₹2000</span>
+        <span class="text-teal-600 font-semibold">₹1800</span>
+      </div>
+    </div>
+
+    <div class="bg-white border rounded p-3 hover:shadow-lg transition">
+      <img src="/Assets/images/apple ipad pro 1.png" class="w-full h-40 object-cover rounded">
+      <h4 class="mt-2 font-semibold">Apple Airpods Max Type</h4>
+      <p class="text-sm text-gray-500">Apple</p>
+      <div class="flex gap-3 mt-2">
+        <span class="line-through text-gray-400">₹2000</span>
+        <span class="text-teal-600 font-semibold">₹1800</span>
+      </div>
+    </div>
+
+    <div class="bg-white border rounded p-3 hover:shadow-lg transition">
+      <img src="/Assets/images/headphones 10.png" class="w-full h-40 object-cover rounded">
+      <h4 class="mt-2 font-semibold">JBL Wireless Headset</h4>
+      <p class="text-sm text-gray-500">JBL</p>
+      <div class="flex gap-3 mt-2">
+        <span class="line-through text-gray-400">₹2000</span>
+        <span class="text-teal-600 font-semibold">₹1800</span>
+      </div>
+    </div>
+
+    <div class="bg-white border rounded p-3 hover:shadow-lg transition">
+      <img src="/Assets/images/apple ipad 10.png" class="w-full h-40 object-cover rounded">
+      <h4 class="mt-2 font-semibold">JBL JR470NC Kids Headset</h4>
+      <p class="text-sm text-gray-500">JBL</p>
+      <div class="flex gap-3 mt-2">
+        <span class="line-through text-gray-400">₹2000</span>
+        <span class="text-teal-600 font-semibold">₹1800</span>
+      </div>
+    </div>
+ </div>
+
+</div>
+
+<!-- 🔹 FOOTER -->
+<footer class="bg-black text-gray-300">
+
+  <div class="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-8">
+
+    <!-- Discover -->
+    <div>
+      <h4 class="text-sm tracking-widest text-white-400 font-bold mb-4">DISCOVER</h4>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-white font-bold">Delivery Terms</a></li>
+        <li><a href="#" class="hover:text-white font-bold">Contact Us</a></li>
+        <li><a href="#" class="hover:text-white font-bold">How to Place Order</a></li>
+        <li><a href="#" class="hover:text-white font-bold">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Continue Shopping -->
+    <div>
+      <h4 class="text-sm tracking-widest text-white-400 font-bold mb-4">CONTINUE SHOPPING</h4>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-white font-bold">Small Gadgets</a></li>
+        <li><a href="#" class="hover:text-white font-bold">Gaming</a></li>
+        <li><a href="#" class="hover:text-white font-bold">Smart Watch</a></li>
+        <li><a href="#" class="hover:text-white font-bold">Headphones</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h4 class="text-sm tracking-widest text-white-400 font-bold mb-4">S.T.TECH</h4>
+      <p class="mb-2 font-bold">
+        No.5, South Fairlands,<br>
+        Yercaud Main Road, Salem,<br>
+        Tamilnadu
+      </p>
+      <p class="mt-2 font-bold">+91 90000 90101</p>
+      <p class="mt-2 font-bold">+91 92102 54879</p>
+      <p class="mt-2 font-bold">info@srtech.com</p>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+<div class="border-t border-white-700 py-4">
+
+  <div class="max-w-7xl mx-auto px-6 flex flex-col items-center text-center gap-3">
+
+    
+
+    <!-- Social Icons -->
+    <div class="flex gap-5 text-xl text-white-400">
+
+      <a href="#" class="hover:text-white transition">
+        <i class="bi bi-twitter"></i>
+      </a>
+
+      <a href="#" class="hover:text-white transition">
+        <i class="bi bi-facebook"></i>
+      </a>
+
+      <a href="#" class="hover:text-white transition">
+        <i class="bi bi-instagram"></i>
+      </a>
+
+      <a href="#" class="hover:text-white transition">
+        <i class="bi bi-youtube"></i>
+      </a>
+
+      <a href="#" class="hover:text-white transition">
+        <i class="bi bi-linkedin"></i>
+      </a>
+
+      <a href="#" class="hover:text-white transition">
+        <i class="bi bi-tiktok"></i>
+      </a>
+    
+    </div>
+
+ <div >
+
+  <!-- Copyright --> <p class="text-sm text-white-500 text-center"> © 2026 S.R.Tech. All rights reserved. </p>
+
+</div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
